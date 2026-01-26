@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/NWJRwhdjhE=",
+  "dgSpecHash": "VGCTKjbRg1I=",
   "success": true,
   "projectFilePath": "D:\\ASP.NET\\CinemaTicketing\\CinemaTicketing.Application\\CinemaTicketing.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mazur\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.2\\microsoft.extensions.configuration.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\mazur\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.2\\microsoft.extensions.dependencyinjection.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\mazur\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.2\\microsoft.extensions.logging.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\mazur\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.2\\microsoft.extensions.primitives.10.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
