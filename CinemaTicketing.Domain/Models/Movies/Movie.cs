@@ -7,15 +7,15 @@ public class Movie : BaseEntity
 {
     public int Id { get; set; }
 
-    public string Title { get; set; } = null!;
+    public string Title { get; set; } 
 
-    public string Genre { get; set; } = null!;
+    public string Genre { get; set; } 
 
     public int Rating { get; set; } 
 
     public int DurationMinutes { get; set; }
 
-    public string Description { get; set; } = null!;
+    public string Description { get; set; }
 
     public ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
 }

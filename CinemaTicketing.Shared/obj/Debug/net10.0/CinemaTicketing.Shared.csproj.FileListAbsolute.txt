@@ -1,0 +1,13 @@
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\bin\Debug\net10.0\CinemaTicketing.Shared.deps.json
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\bin\Debug\net10.0\CinemaTicketing.Shared.dll
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\bin\Debug\net10.0\CinemaTicketing.Shared.pdb
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.csproj.AssemblyReference.cache
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.AssemblyInfoInputs.cache
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.AssemblyInfo.cs
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.csproj.CoreCompileInputs.cache
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.sourcelink.json
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.dll
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\refint\CinemaTicketing.Shared.dll
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\CinemaTicketing.Shared.pdb
+D:\ASP.NET\CinemaTicketing\CinemaTicketing.Shared\obj\Debug\net10.0\ref\CinemaTicketing.Shared.dll

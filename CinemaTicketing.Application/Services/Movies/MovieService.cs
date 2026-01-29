@@ -27,25 +27,25 @@ public class MovieService
         return response.ToResponseList(ToMovieResponse);
     }
     
-        public async Task<MovieResponse?> GetById(int id, CancellationToken cancellationToken = default)
+        public async ValueTask<Movie?> GetById(int id, CancellationToken cancellationToken = default)
     {
         var response = await _movieRepository.GetById(id, cancellationToken);
 
         return response == null 
             ? null 
-            : ToMovieResponse(response);
+            : response;
     }
 
     public async Task<MovieResponse> Add(CreateMovieRequest request, CancellationToken cancellationToken = default)
     {
         if (string.IsNullOrEmpty(request.Title) || string.IsNullOrWhiteSpace(request.Title))
         {
-            throw new ArgumentException("Invalid training name");
+            throw new ArgumentException("Invalid movie name");
         }
 
         try
         {
-            var training = new Movie
+            var movie = new Movie
             {
                 Title = request.Title,
                 Rating = 0,
@@ -54,12 +54,12 @@ public class MovieService
                 Description = request.Description
             };
 
-            _movieRepository.Add(training);
+            _movieRepository.Add(movie);
 
             await _unitOfWork.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation($"Added new movie {training.Title}");
+            _logger.LogInformation($"Added new movie {movie.Title}");
 
-            return ToMovieResponse(training);
+            return ToMovieResponse(movie);
         }
         catch (Exception ex)
         {
@@ -68,7 +68,7 @@ public class MovieService
         }
     }
 
-    public async Task<MovieResponse> UpdateMoive(int id, CreateMovieRequest request,
+    public async Task<MovieResponse> UpdateMovie(int id, CreateMovieRequest request,
         CancellationToken cancellationToken = default)
     {
         var movie = await _movieRepository.GetById(id, cancellationToken);
@@ -91,12 +91,9 @@ public class MovieService
         return ToMovieResponse(movie);
     }
 
-    public async Task DeleteTraining(int id, CancellationToken cancellationToken = default)
+    public async Task DeleteMovie(int id, CancellationToken cancellationToken = default)
     {
         var movie = await _movieRepository.GetById(id, cancellationToken);
-        
-        //if (training == null)
-         //   throw new NotFoundException("Training not found");
         
         _movieRepository.Delete(movie);
         
