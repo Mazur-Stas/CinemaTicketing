@@ -1,4 +1,5 @@
 using CinemaTicketing.Api;
+using CinemaTicketing.Api.Endpoints;
 using CinemaTicketing.Api.Middlewares;
 using CinemaTicketing.Infrastructure;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +38,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-//app.UseExercisesEndpoints();
+app.UseMoviesEndpoints();
     
 app.UseMiddleware<GlobalExceptionHandling>();
 

@@ -22,11 +22,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-      <Folder Include="Endpoints\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\CinemaTicketing.Application\CinemaTicketing.Application.csproj" />
       <ProjectReference Include="..\CinemaTicketing.Domain\CinemaTicketing.Domain.csproj" />
       <ProjectReference Include="..\CinemaTicketing.Infrastructure\CinemaTicketing.Infrastructure.csproj" />
