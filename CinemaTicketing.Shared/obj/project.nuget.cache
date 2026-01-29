@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eCwCt8sUcFw=",
+  "dgSpecHash": "rsb2AOxptXU=",
   "success": true,
   "projectFilePath": "D:\\ASP.NET\\CinemaTicketing\\CinemaTicketing.Shared\\CinemaTicketing.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mazur\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
