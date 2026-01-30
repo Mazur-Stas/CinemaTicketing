@@ -2,8 +2,6 @@
 using CinemaTicketing.Application.Services.Auth.Jwt;
 using CinemaTicketing.Domain.Abstractions;
 using CinemaTicketing.Infrastructure;
-using CinemaTicketing.Infrastructure.Notifications;
-
 namespace CinemaTicketing.Api;
 
 using System.Security.Claims;
@@ -33,13 +31,11 @@ public static class DependencyInjection
             .WithScopedLifetime()
             
             .AddClasses(c => c.Where(t =>
-                t.Name.EndsWith("Service", StringComparison.Ordinal) &&
-                t != typeof(NotificationService)))
+                t.Name.EndsWith("Service", StringComparison.Ordinal)))
             .AsSelf()
             .WithScopedLifetime());
 
         services.AddTransient<IJwtGenerator, JwtGenerator>();
-        services.AddTransient<INotificationService, NotificationService>();
 
         return services;
     }
