@@ -293,3 +293,7 @@ Error Number:515,State:2,Class:16
 2026-01-30 15:38:26.190 +02:00 [INF] Added new movie Sinners
 2026-01-30 15:38:26.193 +02:00 [INF] HTTP POST /api/v1/movies responded 201 in 92.7394 ms
 2026-01-30 15:38:29.883 +02:00 [INF] HTTP GET /api/v1/movies responded 200 in 4.4094 ms
+2026-01-30 15:45:58.991 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-01-30 15:46:01.178 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-01-30 15:46:01.182 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-01-30 15:46:01.386 +02:00 [INF] HTTP GET /api/v1/movies responded 200 in 2411.1999 ms

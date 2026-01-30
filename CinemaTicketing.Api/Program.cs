@@ -1,6 +1,7 @@
 using CinemaTicketing.Api;
 using CinemaTicketing.Api.Endpoints;
 using CinemaTicketing.Api.Middlewares;
+using CinemaTicketing.Application.Services.Tickets;
 using CinemaTicketing.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
@@ -18,7 +19,7 @@ builder.Host.UseSerilog((context, loggerConfig) =>
 builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.Converters.Add(new StringEnumConverter()));
 builder.Services.AddOpenApi();
 
-builder.Services.AddSignalR();
+builder.Services.AddScoped<TicketService>(); 
 
 
 
