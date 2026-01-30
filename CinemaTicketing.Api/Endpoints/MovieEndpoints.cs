@@ -10,8 +10,14 @@ public static class MovieEndpoints
     {
         var group = app.MapGroup("api/v1/movies");
         
-        group.MapGet("/", async ([FromBody] MovieRequest request, CancellationToken cancellationToken, MovieService service) =>
-        {
+        group.MapGet("/", async ( [FromQuery] string? search, [FromQuery] int limit, [FromQuery] int offset, CancellationToken cancellationToken, MovieService service) =>
+            {
+                var request = new MovieRequest
+                {
+                    Limit = limit,
+                    Offset = offset,
+                    Search = search
+                };
             var movies = await service.GetAll(request, cancellationToken);
             return Results.Ok(movies);
         })

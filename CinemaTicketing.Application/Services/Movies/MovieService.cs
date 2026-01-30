@@ -48,7 +48,7 @@ public class MovieService
             var movie = new Movie
             {
                 Title = request.Title,
-                Rating = 0,
+                Rating = request.Rating,
                 Genre = request.Genre,
                 DurationMinutes = request.DurationMinutes,
                 Description = request.Description
@@ -73,11 +73,9 @@ public class MovieService
     {
         var movie = await _movieRepository.GetById(id, cancellationToken);
         
-        //if (training == null)
-           // throw new NotFoundException("Training not found");
 
            movie.Title = request.Title;
-           movie.Rating = 0;
+           movie.Rating = request.Rating;
            movie.Genre = request.Genre;
            movie.DurationMinutes = request.DurationMinutes;
            movie.Description = request.Description;
