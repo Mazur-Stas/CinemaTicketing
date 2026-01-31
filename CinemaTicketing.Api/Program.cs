@@ -31,7 +31,7 @@ builder.Services
 
 var app = builder.Build();
 
-// Optional but “standard”: request logging middleware
+
 app.UseSerilogRequestLogging();
 
 if (app.Environment.IsDevelopment())

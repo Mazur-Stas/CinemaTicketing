@@ -28,7 +28,7 @@ public class JwtGenerator : IJwtGenerator
             new Claim(JwtRegisteredClaimNames.Sub, nickname),
             new Claim(JwtRegisteredClaimNames.Email, email),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Role, "User") 
+            new Claim(ClaimTypes.Role, "Customer"), 
         };
 
         
